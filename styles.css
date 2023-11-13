@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7c7a7a;
+}
+.clock{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: url("./images/clock2.png");
+    background-size: cover;
+    display: flex;
+
+}
