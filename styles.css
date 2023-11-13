@@ -17,5 +17,65 @@ body{
     background: url("./images/clock2.png");
     background-size: cover;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.clock::before{
+    content: "";
+    position: absolute;
+    background-color: #202020;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    z-index: 5;
+}
+.clock .hand{
+    position: absolute;
+}
+.clock .hour{
+    width: 190px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    transform: rotateZ(50deg);
+}
+.clock .hour::before{
+    content: "";
+    width: 8px;
+    height: 90px;
+    background-color: #171515;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    z-index: 2;
+}
+.clock .min{
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+}
+.clock .min::before{
+    content: "";
+    width: 6px;
+    height: 110px;
+    background-color: #171515;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    z-index: 2;
+}
+.clock .sec{
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    transform: rotateZ(90deg);
+}
+.sec::before{
+    content: "";
+    width: 2px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    z-index: 3;
 }
